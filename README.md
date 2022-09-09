@@ -25,4 +25,6 @@ Charmeleon has 20 HP left
 Pickachu departed, fight ended
 
 Pokemon population health: 17
+Pokemon population count: 2
+
 ```

@@ -56,6 +56,11 @@ public class Pokemon
         return false;
     }
 
+    public static int getPopulation() 
+    {
+        return pokemons.Count;
+    }
+
     public static int getPopulationHealth()
     {
         var totalHealth = 0f;

@@ -45,3 +45,4 @@ void PlayFight()
 
 PlayFight();
 Console.WriteLine("Pokemon population health: {0}", Pokemon.getPopulationHealth());
+Console.WriteLine("Pokemon population count: {0}", Pokemon.getPopulation());
