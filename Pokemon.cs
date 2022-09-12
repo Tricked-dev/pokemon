@@ -26,6 +26,11 @@ public class Pokemon
     public Weakness weakness { get; set; }
     public Resistance resistance { get; set; }
 
+    public Attack? GetAttack(String name)
+    {
+        return attacks.Find(attack => attack.name == name);
+    }
+
     public void Attack(Pokemon pokemon, Attack attack)
     {
         if (energyType == pokemon.weakness.energyType)
@@ -56,7 +61,7 @@ public class Pokemon
         return false;
     }
 
-    public static int getPopulation() 
+    public static int getPopulation()
     {
         return pokemons.Count;
     }

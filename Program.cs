@@ -31,12 +31,12 @@ Console.WriteLine("--------------------");
 void PlayFight()
 {
     Console.WriteLine("Pickachu attacks Charmeleon with Electric Ring");
-    Pickachu.Attack(Charmeleon, Pickachu.attacks[0]);
+    Pickachu.Attack(Charmeleon, Pickachu.GetAttack("Electric Ring")!);
     Console.WriteLine("Pickachu has {0} HP left", Pickachu.health);
     Console.WriteLine("Charmeleon has {0} HP left", Charmeleon.health);
     Console.WriteLine();
     Console.WriteLine("Charmeleon attacks Pickachu with Flare");
-    Charmeleon.Attack(Pickachu, Charmeleon.attacks[1]);
+    Charmeleon.Attack(Pickachu, Charmeleon.GetAttack("Flare")!);
     Console.WriteLine("Pickachu has {0} HP left", Pickachu.health);
     Console.WriteLine("Charmeleon has {0} HP left", Charmeleon.health);
     Console.WriteLine("Pickachu departed, fight ended");
